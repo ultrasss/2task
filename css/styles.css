@@ -1,0 +1,125 @@
+/*
+    Styles
+*/
+
+/* .list-item.active {
+
+}
+
+это означает если .menu-item есть класс .active то к дочерним тегам a применить:
+.list-item.active a {
+    color: white;
+}
+
+.menu-item active {
+
+}
+.list-item.active {
+
+}
+.list-item.active a {
+  color: white;
+}
+*/
+
+/*подключение шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* меню */
+.page-header {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: flex-end;
+        margin-bottom: 9px;
+        
+}
+.list-item {
+    display: flex;
+    align-items: flex-end;
+    height: 75px;
+    width: auto;
+    margin: 0 8px;
+    
+}
+.list-item a {
+    padding: 0 12px 11px 12px;
+    color: black;
+}
+.list-item.active {
+    background-color: #d45e5e;    
+} 
+.list-item.active a{
+    color: white;
+}
+.item-link {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.list-item:not(:last-child) {
+    margin-right: 8px;
+}
+a {
+    font-family: 'Roboto', sans-serif;
+   }
+.logo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+   }
+/* блоки */
+.photo-holder{ 
+    width: 100%; 
+    
+} 
+.photo{ 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    gap: 30px;
+    margin: 30px;
+   
+} 
+
+
+
+/***LANDSCAPE-MOBILE***/
+@media screen and (min-height : 120px) and (max-height : 320px){
+
+}
+/***END--LANDSCAPE-MOBILE***/
+
+/***PORTRAIT-MOBILE***/
+@media screen and (min-width : 120px){
+
+}
+/***END--PORTRAIT-MOBILE***/
+
+/***PORTRAIT-TABLET-MINI***/
+@media screen and (min-width : 768px){
+
+}
+/***END--PORTRAIT-TABLET-MINI***/
+
+/***PORTRAIT-TABLET***/
+@media screen and (min-width : 1024px){
+
+}
+/***END--PORTRAIT-TABLET***/
+
+/***LAPTOP-MDPIScreen***/
+@media screen and (min-width : 1280px){
+
+}
+/***END--LAPTOP-MDPIScreen***/
+
+/***LAPTOP-HiDPIScreen***/
+@media screen and (min-width : 1440px){
+
+}
+/***END--LAPTOP-HiDPIScreen***/
